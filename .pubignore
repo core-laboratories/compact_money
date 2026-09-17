@@ -1,0 +1,7 @@
+.github/
+.gitignore
+.editorconfig
+pubspec.lock
+coverage/
+build/
+CONTRIBUTING.md

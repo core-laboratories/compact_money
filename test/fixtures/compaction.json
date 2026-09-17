@@ -1,0 +1,2339 @@
+[
+	{
+		"input": {
+			"amount": 0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 0,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 10,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 10,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -10,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -10,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 100,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 100,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -100,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -100,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 800,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 800,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -800,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -800,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 999,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -999,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -1000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 8000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 8,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -8000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -8,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -30487,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -30.5,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 80000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 80,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -80000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -80,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 81234,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 81.2,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -81234,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -81.2,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 800000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 800,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -800000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -800,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 812345,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 812,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -812345,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -812,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 1000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -1000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 8.12,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -8.12,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 80000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 80,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -80000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -80,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 81234567,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 81.2,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -81234567,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -81.2,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 800000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 800,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -800000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -800,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 812345678,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 812,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -812345678,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -812,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 1000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -1000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 8000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 8,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -8000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -8,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 1000000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -1000000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 8000000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 8,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -8000000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -8,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 1500000000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1500,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -1500000000000000,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1500,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999999999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1000,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999999999999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1000,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 1.245,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1.24,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1.245,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1.24,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1.255,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1.26,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1.255,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1.26,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 12.45,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 12.4,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -12.45,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -12.4,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 12.55,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 12.6,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -12.55,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -12.6,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 124.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 124,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -124.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -124,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 125.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 126,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -125.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -126,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 0.005,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 0,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -0.005,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 0,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 0.015,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 0.02,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -0.015,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -0.02,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 9.995,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 10,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -9.995,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -10,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 99.95,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 100,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -99.95,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -100,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 80000.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 80,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -80000.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -80,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "VND",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "LAK",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "LAK"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "IDR",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "IDR"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "KRW",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "KRW"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "JPY",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "JPY"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "EUR",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "EUR"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "USD",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "USD"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "CZK",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "CZK"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "CSK",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "CSK"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "USDC",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "USDC"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "USDT",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "USDT"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "BTC",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "BTC"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "ETH",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "ETH"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "CORE",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "CORE"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": " custom ",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": " custom "
+		}
+	},
+	{
+		"input": {
+			"amount": 80000,
+			"currency": "VND",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 80,
+			"unit": "k",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "VND",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"currency": "VND",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 8.12,
+			"unit": "M",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": 0,
+			"currency": "VND",
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 0,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"currency": "VND",
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": 8123456,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": -8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "VND",
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": 30487,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -30487,
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": -30487,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 999999,
+			"currency": "VND",
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": 999999,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999,
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": -999999,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 0.001,
+			"currency": "VND",
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": 0.001,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -0.001,
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": -0.001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 80000.5,
+			"currency": "VND",
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": 80000.5,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -80000.5,
+			"allowRounding": false
+		},
+		"expected": {
+			"amount": -80000.5,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 30.5,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 999.499999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 999,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 999.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 999.500001,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -999.499999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -999,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -999.5,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -999.500001,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 999499.999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 999,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 999500.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 999500.001,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -999499.999,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -999,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -999500.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -999500.001,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 999499999.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 999,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 999500000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 999500001.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -999499999.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -999,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -999500000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -999500001.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 999499999000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 999,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 999500000000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 999500001000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -999499999000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -999,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -999500000000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -999500001000.0,
+			"allowRounding": true
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"currency": "VND"
+		},
+		"expected": {
+			"amount": 8123456,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456
+		},
+		"expected": {
+			"amount": -8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"currency": "VND"
+		},
+		"expected": {
+			"amount": 30487,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -30487
+		},
+		"expected": {
+			"amount": -30487,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 999999,
+			"currency": "VND"
+		},
+		"expected": {
+			"amount": 999999,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999
+		},
+		"expected": {
+			"amount": -999999,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 0.001,
+			"currency": "VND"
+		},
+		"expected": {
+			"amount": 0.001,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -0.001
+		},
+		"expected": {
+			"amount": -0.001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 80000.5,
+			"currency": "VND"
+		},
+		"expected": {
+			"amount": 80000.5,
+			"unit": "",
+			"currency": "VND"
+		}
+	},
+	{
+		"input": {
+			"amount": -80000.5
+		},
+		"expected": {
+			"amount": -80000.5,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456
+		},
+		"expected": {
+			"amount": 8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456
+		},
+		"expected": {
+			"amount": -8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123000
+		},
+		"expected": {
+			"amount": 8123,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123000
+		},
+		"expected": {
+			"amount": -8123,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 8120000
+		},
+		"expected": {
+			"amount": 8120,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -8120000
+		},
+		"expected": {
+			"amount": -8120,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 8000000
+		},
+		"expected": {
+			"amount": 8,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8000000
+		},
+		"expected": {
+			"amount": -8,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123000000
+		},
+		"expected": {
+			"amount": 8123,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123000000
+		},
+		"expected": {
+			"amount": -8123,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123000000000
+		},
+		"expected": {
+			"amount": 8123,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123000000000
+		},
+		"expected": {
+			"amount": -8123,
+			"unit": "B"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123000000000000
+		},
+		"expected": {
+			"amount": 8123,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123000000000000
+		},
+		"expected": {
+			"amount": -8123,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 1000.001
+		},
+		"expected": {
+			"amount": 1000.001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1000.001
+		},
+		"expected": {
+			"amount": -1000.001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1000.0000000000001
+		},
+		"expected": {
+			"amount": 1000.0000000000001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1000.0000000000001
+		},
+		"expected": {
+			"amount": -1000.0000000000001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 9007199254740991
+		},
+		"expected": {
+			"amount": 9007199254740991,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -9007199254740991
+		},
+		"expected": {
+			"amount": -9007199254740991,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1e21
+		},
+		"expected": {
+			"amount": 1000000000.0,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -1e21
+		},
+		"expected": {
+			"amount": -1000000000.0,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 1e-7
+		},
+		"expected": {
+			"amount": 1e-7,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1e-7
+		},
+		"expected": {
+			"amount": -1e-7,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 0
+		},
+		"expected": {
+			"amount": 0,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -8123456,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": 8123.456,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": -8123.456,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"decimals": 6
+		},
+		"expected": {
+			"amount": 8.123456,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"decimals": 6
+		},
+		"expected": {
+			"amount": -8.123456,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123000,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 8123,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123000,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -8123,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123000,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": 8.123,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123000,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": -8.123,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8100000,
+			"decimals": 1
+		},
+		"expected": {
+			"amount": 8.1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8100000,
+			"decimals": 1
+		},
+		"expected": {
+			"amount": -8.1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8120000,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 8.12,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8120000,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -8.12,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": 30.487,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -30487,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": -30.487,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 1000.001,
+			"decimals": 6
+		},
+		"expected": {
+			"amount": 1.000001,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -1000.001,
+			"decimals": 6
+		},
+		"expected": {
+			"amount": -1.000001,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 1000.0000000000001,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 1000.0000000000001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1000.0000000000001,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -1000.0000000000001,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1.234567,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 1.234567,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1.234567,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -1.234567,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"decimals": 100
+		},
+		"expected": {
+			"amount": 8.123456,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"decimals": 100
+		},
+		"expected": {
+			"amount": -8.123456,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 1e-7,
+			"decimals": 100
+		},
+		"expected": {
+			"amount": 1e-7,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1e-7,
+			"decimals": 100
+		},
+		"expected": {
+			"amount": -1e-7,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 8,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -8,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"allowRounding": true,
+			"decimals": 1
+		},
+		"expected": {
+			"amount": 8.1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": true,
+			"decimals": 1
+		},
+		"expected": {
+			"amount": -8.1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 8.12,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -8.12,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"allowRounding": true,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": 8.123,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": true,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": -8.123,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 8123456,
+			"allowRounding": true,
+			"decimals": 6
+		},
+		"expected": {
+			"amount": 8.123456,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -8123456,
+			"allowRounding": true,
+			"decimals": 6
+		},
+		"expected": {
+			"amount": -8.123456,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 30487,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 30.49,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -30487,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -30.49,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 1245,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 1.24,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -1245,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -1.24,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 1255,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 1.26,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -1255,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -1.26,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 1.234,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 1,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1.234,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -1,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 0.5,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 0,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -0.5,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 0,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1.5,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 2,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1.5,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -2,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 999999,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": 1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999,
+			"allowRounding": true,
+			"decimals": 2
+		},
+		"expected": {
+			"amount": -1,
+			"unit": "M"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999,
+			"allowRounding": true,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": 999.999,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999,
+			"allowRounding": true,
+			"decimals": 3
+		},
+		"expected": {
+			"amount": -999.999,
+			"unit": "k"
+		}
+	},
+	{
+		"input": {
+			"amount": 999999999999999,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": 1000,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": -999999999999999,
+			"allowRounding": true,
+			"decimals": 0
+		},
+		"expected": {
+			"amount": -1000,
+			"unit": "T"
+		}
+	},
+	{
+		"input": {
+			"amount": 1.23456789,
+			"allowRounding": true,
+			"decimals": 100
+		},
+		"expected": {
+			"amount": 1.23456789,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1.23456789,
+			"allowRounding": true,
+			"decimals": 100
+		},
+		"expected": {
+			"amount": -1.23456789,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": 1e-7,
+			"allowRounding": true,
+			"decimals": 7
+		},
+		"expected": {
+			"amount": 1e-7,
+			"unit": ""
+		}
+	},
+	{
+		"input": {
+			"amount": -1e-7,
+			"allowRounding": true,
+			"decimals": 7
+		},
+		"expected": {
+			"amount": -1e-7,
+			"unit": ""
+		}
+	}
+]

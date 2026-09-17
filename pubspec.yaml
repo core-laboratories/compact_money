@@ -1,0 +1,20 @@
+name: compact_money
+description: Compact monetary amounts into structured financial units with optional currency metadata and half-to-even rounding. Pure Dart, usable from Flutter.
+version: 0.0.1
+repository: https://github.com/core-laboratories/compact_money
+homepage: https://github.com/core-laboratories/compact_money
+issue_tracker: https://github.com/core-laboratories/compact_money/issues
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.28.0
+
+topics:
+  - money
+  - currency
+  - finance
+  - formatting
+  - utilities

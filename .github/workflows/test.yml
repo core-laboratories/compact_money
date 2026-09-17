@@ -1,0 +1,39 @@
+name: Test
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  dart:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        sdk: ['3.10.0', stable]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: ${{ matrix.sdk }}
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: dart analyze --fatal-infos
+      - run: dart test
+      - run: dart test --platform node test/rounding_test.dart test/compact_unit_test.dart test/precision_test.dart
+      - run: dart compile js example/compact_money_example.dart -o /tmp/compact_money.js
+      - run: node /tmp/compact_money.js
+      - if: matrix.sdk == 'stable'
+        run: dart pub publish --dry-run
+  flutter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - run: bash tool/flutter_smoke.sh

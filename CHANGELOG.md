@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+- Stable release of the existing compaction API.
+
 ## 0.0.1
 
 - Initial release.
